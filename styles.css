@@ -223,13 +223,13 @@ body {
 
 /*.util-button add-deck*/
 .add-deck{
-    background-color: #5ED064;
+    background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%);
 }
 .add-deck:hover{
-    background: rgba(17, 221, 44, 0.75);
+    background: linear-gradient(135deg, #e5ebfd 0%, #d4ddff 100%);
 }
 .add-deck:active{    
-  background: rgba(11, 203, 36, 0.75);
+    background: linear-gradient(135deg, #c3d1fe 0%, #acbdff 100%);
 }
 
 /*.util-button add*/
