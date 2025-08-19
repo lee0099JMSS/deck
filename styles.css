@@ -328,3 +328,39 @@ i {
     display:flex;
     flex-direction: row;
 }
+
+/* Help Tooltip */
+.help-tooltip {
+    position: absolute;
+    background: #333;
+    color: rgba(238, 238, 0, 0.635);
+    padding: 10px 15px;
+    border-radius: 6px;
+    font-size: 14px;
+    z-index: 9999;
+    max-width: 250px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    pointer-events: none;
+}
+
+.help-tooltip::after {
+    content: '';
+    position: absolute;
+    bottom: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-width: 5px 5px 0;
+    border-style: solid;
+    border-color: #333 transparent transparent;
+}
+
+/* Help Mode Active State */
+.help-mode-active .clickable {
+    position: relative;
+    outline: 2px solid #007bff !important;
+    outline-offset: 2px;
+}
+
+.help-mode-active .clickable:hover {
+    background-color: rgba(0, 123, 255, 0.1) !important;
+}
