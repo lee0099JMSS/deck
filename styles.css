@@ -265,6 +265,18 @@ body {
   background: rgba(11, 203, 36, 0.75);
 }
 
+/*.util-button donate*/
+.donate{
+    background-color: #fddd2a;
+}
+.donate:hover{
+    background: rgb(255, 255, 17);
+}
+.donate:active{    
+  background: rgba(203, 190, 11, 0.75);
+}
+
+
 /*.util-button delete*/
 .delete{
     background-color: #e34d4d;
