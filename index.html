@@ -57,6 +57,37 @@
                 <div class="btn-img"></div>
                 <span>Btn 6</span>
             </button>
+
+             <script>
+                document.addEventListener('DOMContentLoaded', function() {
+                    const nextBtn = document.getElementById('nextBtn');
+                    const backBtn = document.getElementById('backBtn');
+                    const page1 = document.querySelector('.page-1');
+                    const page2 = document.querySelector('.page-2');
+                    
+                    // Function to navigate to next page
+                    function goToNextPage() {
+                        page1.classList.add('zoom-out');
+                        
+                        setTimeout(() => {
+                            page2.classList.add('zoom-in');
+                        }, 400);
+                    }
+                    
+                    // Function to navigate back to previous page
+                    function goBack() {
+                        page2.classList.remove('zoom-in');
+                        
+                        setTimeout(() => {
+                            page1.classList.remove('zoom-out');
+                        }, 400);
+                    }
+                    
+                    // Event listeners for buttons
+                    nextBtn.addEventListener('click', goToNextPage);
+                    backBtn.addEventListener('click', goBack);
+                });
+            </script>
         </div>  
     </div>
 </body>
